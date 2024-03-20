@@ -1,0 +1,46 @@
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+}
+
+.gallery .controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    list-style: none;
+
+}
+
+.gallery .image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* .gallery .image-container .image{
+     height: 250px;
+     width: 250px;
+     border: 15px solid #fff;
+     box-shadow:0 3px 5px rgba(0, 0, 0, .3);
+     margin: 20px;
+} */
+
+.gallery .image-container .image img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border: 15px solid #fff; 
+    box-shadow:0 3px 5px rgba(0, 0, 0, .3);
+    margin: 20px;
+    
+}
+
+.gallery .image-container .image.active img {
+    border-color: red; /* Change border color to red when the figure is active */
+}
+
+
+
